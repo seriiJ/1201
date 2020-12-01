@@ -1,0 +1,68 @@
+.body{
+    width: 1920px;
+    height: 1080px;
+    animation: bgcolor infinite 30s;
+    transition: ease;
+}
+.innerbox{
+    width: 1838px;
+    height: 1000px;
+    -webkit-filter: blur(12px);
+}
+
+.position1{
+    position: static;
+    bottom: 40px;
+    right: 40px;
+}
+
+.position2{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.move1{ 
+    animation-name: move1;
+    animation-duration:3s; 
+    animation-fill-mode:  forwards;
+    animation-iteration-count:  infinite; 
+    animation-delay: 5s;
+} 
+
+@keyframes bgcolor{
+    0% { 
+        background: #ff6600; 
+    }
+    34% { 
+        background: #a12517; 
+    }
+    68% { 
+        background: #241514; 
+    }
+    100% { 
+        background: #4d2f2a; 
+    }
+}
+
+.css-selector {
+    background: linear-gradient(180deg, #ffae00, #ef0000, #e67031, #10133a, #422745, #e40000);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 35s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    100%{background-position:50% 100%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    100%{background-position:50% 100%}
+}
+@keyframes AnimationName { 
+    0%{background-position:51% 0%}
+    100%{background-position:51% 100%}
+}
